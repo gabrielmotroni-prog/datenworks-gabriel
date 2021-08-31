@@ -1,10 +1,16 @@
-# Datenworks - Gabriel Motroni
+## Datenworks - Gabriel Motroni
 
 Coloco a disposição as etapas solicitadas para o processo seletivo ao Estágio DevOps.
-Cada Branch refere-se a uma etapa solicitada e seus respetivos arquivos.
+Cada Branch refere-se a uma etapa solicitada e seus respectivos arquivos.
 
-1 - 
+Parte 1 - 
+Codar uma RestAPI hellow-world em qualquer linguagem e configurar sua execução em container.
+Entregáveis:
+- Código da API
+- Dockerfile
+- Comandos para deixar a API rodando
+- Payload de teste da API
 
-2 - 
+Parte 2 - 
 
-3 - 
+Parte 3 - 
