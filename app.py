@@ -8,8 +8,6 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 
-
-
 #Rota Hello Word
 @app.route('/')
 @app.route('/index')
