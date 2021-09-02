@@ -4,4 +4,5 @@
 -> docker image build -t datenworks-gabriel .
 -> docker image ls
 -> docker run -p 5000:5000 -d datenworks-gabriel #running a container
+-> docker container run -ti datenworks-gabriel #running a container terminar iterativo
 

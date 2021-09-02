@@ -1,6 +1,8 @@
 ## API em Flask - Python
 
-from flask import Flask, jsonify
+#from flask import Flask, jsonify
+from flask import Flask
+
 #from datetime import datetime
 #from datetime import Datetime
 
@@ -12,11 +14,13 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def hello_word():
-    return jsonify({
+    '''   return jsonify({
         'message:':'Hello Word! :D',
         'Author': 'Gabriel dos Santos Motroni',
         'Today': 'datetime.now()'
-    }), 200
+    }), 200'''
+    return "hello word!"
+ 
 
 
 #inicializador do flask
