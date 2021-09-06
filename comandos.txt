@@ -1,4 +1,4 @@
-#python
+#python I
 1) inicia aplicacao local
 python app.py
 

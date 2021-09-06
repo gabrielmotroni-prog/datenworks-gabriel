@@ -1,14 +1,29 @@
-# init a base image (Alpine is small Linux distro)
-#FROM python:3.6.1-alpine
-FROM python:3
-# define the present working directory
+#Dockerfile
+
+FROM python:3.8.5-alpine3.12
+
+#é usado para definir o diretório de trabalho de um contêiner 
+#do Docker a qualquer momento. 
 WORKDIR /datenworkes-gabriel
-# copy the contents into the working dir
-ADD . /datenworkes-gabriel
-#
-#RUN pip freeze > requirements.txt
-# run pip to install the dependencies of the flask app
-RUN python3 -m pip install -r requirements.txt
-#RUN pip install --no-cache-dir -r requirements.txt  <-- old
-# define the command to start the container
-CMD ["python","app.py"]
+
+#Expõem uma ou mais portas, isso quer dizer que o container quando iniciado 
+#poderá ser acessível através dessas portas
+EXPOSE 5000
+
+#explicita quem eh a variavel ambiente do flask.
+#istrução que cria e atribui um valor para uma 
+#variável dentro da imagem,
+ENV FLASK_APP=app
+
+COPY . /datenworkes-gabriel
+
+RUN pip install -r requirements.txt
+
+#Quando um container for inicializado, o que será 
+#executado é a  soma de Entrypoint e CMD.
+ENTRYPOINT [ "flask"]
+CMD [ "run", "--host", "0.0.0.0" ] 
+# flask run --host '0.0.0.0'
+
+
+
