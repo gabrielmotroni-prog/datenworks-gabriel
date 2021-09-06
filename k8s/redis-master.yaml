@@ -1,0 +1,9 @@
+#arquivo de configuração do Kubernetes 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gabrielmotroni-datenworks-gabriel-minikube
+spec:
+  containers:
+  - name: datenworks-gabriel-container
+    image: gabrielmotroni/datenworks-gabriel
