@@ -1,8 +1,14 @@
-#python 2
+#------------------------------------------------------------------------
+#  Python
+#------------------------------------------------------------------------
+
 1) inicia aplicacao local
 python app.py
 
-#docker
+#------------------------------------------------------------------------
+#  Docker
+#------------------------------------------------------------------------
+
 1) criar a imagem docker (nome da imagem: gabrielmotroni/datenworks-gabriel)
 -> docker image build -t gabrielmotroni/datenworks-gabriel .
 #ou
@@ -21,7 +27,10 @@ python app.py
 -> docker login
 -> docker push gabrielmotroni/datenworks-gabriel
 
-#k8s
+#------------------------------------------------------------------------
+#  K8s
+#------------------------------------------------------------------------
+
 1) iniciando, Uma máquina virtual será iniciada e o cluster Kubernetes estará disponível
 -> minikube start
 
