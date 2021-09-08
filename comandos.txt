@@ -1,8 +1,14 @@
-#python I
+#------------------------------------------------------------------------
+#  Python
+#------------------------------------------------------------------------
+
 1) inicia aplicacao local
 python app.py
 
-#docker
+#------------------------------------------------------------------------
+#  Docker
+#------------------------------------------------------------------------
+
 1) criar a imagem docker (nome da imagem: gabrielmotroni/datenworks-gabriel)
 -> docker image build -t gabrielmotroni/datenworks-gabriel .
 #ou
