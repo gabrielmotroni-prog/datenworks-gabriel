@@ -1,11 +1,3 @@
-# api-gateway.tf
-#resource "aws_api_gateway_rest_api" "minha_api_gateway" {
-#  name        = "Minha API"
-#  description = "AWS Rest API de exemplo com Terraform"
-#  endpoint_configuration {
-#   types = ["REGIONAL"]
-#  }
-#}
 
 #------------------------------------------------------------------------
 #terraform {}bloco contém configurações do Terraform, incluindo os provedores 
@@ -217,3 +209,4 @@ output "base_url" {
 
   value = aws_apigatewayv2_stage.lambda.invoke_url
 }
+
