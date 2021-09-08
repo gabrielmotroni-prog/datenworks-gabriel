@@ -1,4 +1,4 @@
-#python 2
+#python II
 1) inicia aplicacao local
 python app.py
 
@@ -45,3 +45,22 @@ para que ele interaja especificamente com o cluster instalado pelo Minikube.
 7)Pra ver os logs da aplicação: 
 ->kubectl logs --follow gabrielmotroni-datenworks-gabriel-minikube #nome do container
 
+
+- serveless : eh sem servidor. vou rodar minha aplicacao por meio de servicos, que no 
+caso vou utilizar o lambda.  lambda eh sobre demanda, ee nao existe. Quando chamo ele
+eh instanciado, roda e para de funcionar. 
+
+- lambda: eh uma funcao que esta no nuvem da aws. 
+eh como um funcao que eu crio na amazon.
+perfeito para projetos de poucoo acesso, pois vc eh cobrado por demanda
+pagando barato
+
+- s3: eh um storage tbm exemplo de serveless. Consigo rodar um front end toda no s3
+
+A maioria dos aplicativos sem servidor usa Functions as a Service (FaaS) para 
+fornecer lógica de aplicativo, junto com serviços especializados para recursos 
+adicionais, como roteamento de solicitações HTTP, enfileiramento de mensagens e 
+armazenamento de dados.
+
+- implantará uma função flask no AWS Lambda e, em seguida, 
+exporá essa função à Internet usando o Amazon API Gateway .
