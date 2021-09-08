@@ -1,0 +1,34 @@
+#------------------------------------------------------------------------
+#  Terraform
+#------------------------------------------------------------------------
+
+1)
+o criar uma nova configuração - ou verificar uma configuração existente no controle 
+de versão - você precisa inicializar o diretório com terraform init.
+-->terraform init
+
+2)
+Recomendamos o uso de formatação consistente em todos os seus arquivos de configuração. O terraform fmtcomando atualiza automaticamente as configurações no 
+diretório atual para facilitar a leitura e consistência.
+-->terraform fmt
+
+3)
+você também pode garantir que sua configuração seja sintaticamente válida e 
+internamente consistente usando o terraform validatecomando.
+-->terraform validate
+
+4) terraform mostra planejamento do que sera feito - plano de execução 
+-->terraform plan
+
+5)Aplique a configuração agora com
+-->terraform apply
+
+
+#------------------------------------------------------------------------
+# URL da RestAPI Gateway
+#------------------------------------------------------------------------
+
+1)
+https://33r1pfudpb.execute-api.us-west-2.amazonaws.com/serverless_lambda_stage/hello
+
+2) roda /hello retorna hello Word!
